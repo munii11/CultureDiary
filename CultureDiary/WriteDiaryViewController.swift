@@ -32,7 +32,7 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         toolBar.isTranslucent = true
         toolBar.sizeToFit()
         
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(donePressed))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(genreDonePressed))
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
@@ -70,7 +70,7 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         toolbar.sizeToFit()
         
         //bar button item
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(dateDonePressed))
         toolbar.setItems([doneButton], animated: false)
         
         textDate.inputAccessoryView = toolbar
@@ -78,7 +78,7 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         //assigning date picker to text field
         textDate.inputView = datePicker
     }
-    @objc func donePressed(){
+    @objc func dateDonePressed(){
         //format date
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -87,6 +87,9 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         let dateString = formatter.string(from: datePicker.date)
         textDate.text = "\(dateString)"
         
+        self.view.endEditing(true)
+    }
+    @objc func genreDonePressed(){
         let indexPath = genrePicker.selectedRow(inComponent: 0)
         textGenre.text = pickGenre[indexPath]
         

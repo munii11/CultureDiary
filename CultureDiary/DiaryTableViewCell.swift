@@ -15,7 +15,6 @@ class DiaryTableViewCell: UITableViewCell {
     @IBOutlet var labelReview: UILabel!
     @IBOutlet var genreImageView: UIImageView!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
