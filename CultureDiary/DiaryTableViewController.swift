@@ -31,6 +31,8 @@ class DiaryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.rowHeight = 100
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -69,17 +71,39 @@ class DiaryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Diary Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryCell", for: indexPath) as! DiaryTableViewCell
         
         // Configure the cell...
         let cultureDiary = cultureDiaries[indexPath.row]
-        var display: String = ""
         if let titleLabel = cultureDiary.value(forKey: "title") as? String {
-            display = titleLabel }
-//        if let phoneLabel = friend.value(forKey: "phone") as? String {
-//            display = display + " " + phoneLabel }
-        cell.textLabel?.text = display
-//        cell.detailTextLabel?.text = friend.value(forKey: "memo") as? String
+            cell.labelTitle?.text = titleLabel
+        }
+        if let dateLabel = cultureDiary.value(forKey: "date") as? String {
+            cell.labelDate?.text = dateLabel
+        }
+        if let reviewLable = cultureDiary.value(forKey: "review") as? String {
+            cell.labelReview?.text = reviewLable
+        }
+        if let ratingView = cultureDiary.value(forKey: "rate") as? Double {
+            cell.viewRate?.rating = ratingView
+        }
+        if let genreView = cultureDiary.value(forKey: "genre") as? String{
+            if genreView == "영화"{
+                cell.genreImageView?.image = #imageLiteral(resourceName: "movie.png")
+            }else if genreView == "도서"{
+                cell.genreImageView?.image = #imageLiteral(resourceName: "book.png")
+            }else if genreView == "연극/뮤지컬/발레"{
+                cell.genreImageView?.image = #imageLiteral(resourceName: "theatre.png")
+            }else if genreView == "음악회/오페라" {
+                cell.genreImageView?.image = #imageLiteral(resourceName: "music.png")
+            }else if genreView == "콘서트" {
+                cell.genreImageView?.image = #imageLiteral(resourceName: "concert.png")
+            }else if genreView == "전시회" {
+                cell.genreImageView?.image = #imageLiteral(resourceName: "exhibition.png")
+            }else if genreView == "기타" {
+                cell.genreImageView?.image = #imageLiteral(resourceName: "more.png")
+            }
+        }
         
         return cell
     }

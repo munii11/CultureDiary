@@ -24,6 +24,18 @@
 		CD423EEE20B68FFF00682DE6 /* ShowDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD423EE720B68FFF00682DE6 /* ShowDiaryViewController.swift */; };
 		CD423EF020B6954100682DE6 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD423EEF20B6954100682DE6 /* CosmosDistrib.swift */; };
 		CD423EF220B6991300682DE6 /* Cosmos in Resources */ = {isa = PBXBuildFile; fileRef = CD423EF120B6991300682DE6 /* Cosmos */; };
+		CD72BB2520BC782F002B4CFE /* exhibition.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB1E20BC782E002B4CFE /* exhibition.png */; };
+		CD72BB2620BC782F002B4CFE /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB1F20BC782E002B4CFE /* movie.png */; };
+		CD72BB2720BC782F002B4CFE /* musical.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2020BC782E002B4CFE /* musical.png */; };
+		CD72BB2820BC782F002B4CFE /* theatre.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2120BC782E002B4CFE /* theatre.png */; };
+		CD72BB2920BC782F002B4CFE /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2220BC782E002B4CFE /* music.png */; };
+		CD72BB2A20BC782F002B4CFE /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2320BC782E002B4CFE /* book.png */; };
+		CD72BB2B20BC782F002B4CFE /* concert.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2420BC782F002B4CFE /* concert.png */; };
+		CD72BB2D20BC789F002B4CFE /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB2C20BC789E002B4CFE /* more.png */; };
+		CD72BB2F20BC7E0A002B4CFE /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72BB2E20BC7E0A002B4CFE /* DiaryTableViewCell.swift */; };
+		CD72BB3420BC9304002B4CFE /* diary.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB3120BC9303002B4CFE /* diary.png */; };
+		CD72BB3520BC9304002B4CFE /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB3220BC9303002B4CFE /* feed.png */; };
+		CD72BB3620BC9304002B4CFE /* mailbox.png in Resources */ = {isa = PBXBuildFile; fileRef = CD72BB3320BC9303002B4CFE /* mailbox.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +58,18 @@
 		CD423EE720B68FFF00682DE6 /* ShowDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDiaryViewController.swift; sourceTree = "<group>"; };
 		CD423EEF20B6954100682DE6 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		CD423EF120B6991300682DE6 /* Cosmos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Cosmos; sourceTree = "<group>"; };
+		CD72BB1E20BC782E002B4CFE /* exhibition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhibition.png; sourceTree = "<group>"; };
+		CD72BB1F20BC782E002B4CFE /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		CD72BB2020BC782E002B4CFE /* musical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musical.png; sourceTree = "<group>"; };
+		CD72BB2120BC782E002B4CFE /* theatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre.png; sourceTree = "<group>"; };
+		CD72BB2220BC782E002B4CFE /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		CD72BB2320BC782E002B4CFE /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		CD72BB2420BC782F002B4CFE /* concert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concert.png; sourceTree = "<group>"; };
+		CD72BB2C20BC789E002B4CFE /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		CD72BB2E20BC7E0A002B4CFE /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		CD72BB3120BC9303002B4CFE /* diary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diary.png; sourceTree = "<group>"; };
+		CD72BB3220BC9303002B4CFE /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		CD72BB3320BC9303002B4CFE /* mailbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mailbox.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +102,13 @@
 		CD423ECB20B68F4D00682DE6 /* CultureDiary */ = {
 			isa = PBXGroup;
 			children = (
-				CD054CFE20B990BE0083016A /* comment.png */,
-				CD054CFA20B98DF50083016A /* empty_heart.png */,
-				CD054CFB20B98DF60083016A /* filled_heart.png */,
+				CD72BB3020BC8D72002B4CFE /* image */,
 				CD423EF120B6991300682DE6 /* Cosmos */,
 				CD423EEF20B6954100682DE6 /* CosmosDistrib.swift */,
 				CD423EE220B68FFF00682DE6 /* LoginViewController.swift */,
 				CD423EE320B68FFF00682DE6 /* CreateUserViewController.swift */,
 				CD423EE620B68FFF00682DE6 /* DiaryTableViewController.swift */,
+				CD72BB2E20BC7E0A002B4CFE /* DiaryTableViewCell.swift */,
 				CD423EE420B68FFF00682DE6 /* WriteDiaryViewController.swift */,
 				CD423EE720B68FFF00682DE6 /* ShowDiaryViewController.swift */,
 				CD423EE120B68FFF00682DE6 /* CommentTableViewController.swift */,
@@ -98,6 +121,27 @@
 				CD054CF820B863B50083016A /* deleteBtn.png */,
 			);
 			path = CultureDiary;
+			sourceTree = "<group>";
+		};
+		CD72BB3020BC8D72002B4CFE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				CD72BB3120BC9303002B4CFE /* diary.png */,
+				CD72BB3220BC9303002B4CFE /* feed.png */,
+				CD72BB3320BC9303002B4CFE /* mailbox.png */,
+				CD72BB2C20BC789E002B4CFE /* more.png */,
+				CD72BB2320BC782E002B4CFE /* book.png */,
+				CD72BB2420BC782F002B4CFE /* concert.png */,
+				CD72BB1E20BC782E002B4CFE /* exhibition.png */,
+				CD72BB1F20BC782E002B4CFE /* movie.png */,
+				CD72BB2220BC782E002B4CFE /* music.png */,
+				CD72BB2020BC782E002B4CFE /* musical.png */,
+				CD72BB2120BC782E002B4CFE /* theatre.png */,
+				CD054CFE20B990BE0083016A /* comment.png */,
+				CD054CFA20B98DF50083016A /* empty_heart.png */,
+				CD054CFB20B98DF60083016A /* filled_heart.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,13 +204,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD423EDA20B68F4D00682DE6 /* LaunchScreen.storyboard in Resources */,
+				CD72BB2520BC782F002B4CFE /* exhibition.png in Resources */,
+				CD72BB2B20BC782F002B4CFE /* concert.png in Resources */,
+				CD72BB3420BC9304002B4CFE /* diary.png in Resources */,
 				CD054CFF20B990BE0083016A /* comment.png in Resources */,
 				CD054CF920B863B50083016A /* deleteBtn.png in Resources */,
+				CD72BB2720BC782F002B4CFE /* musical.png in Resources */,
 				CD423ED720B68F4D00682DE6 /* Assets.xcassets in Resources */,
+				CD72BB3620BC9304002B4CFE /* mailbox.png in Resources */,
+				CD72BB2A20BC782F002B4CFE /* book.png in Resources */,
 				CD423EF220B6991300682DE6 /* Cosmos in Resources */,
+				CD72BB2620BC782F002B4CFE /* movie.png in Resources */,
+				CD72BB3520BC9304002B4CFE /* feed.png in Resources */,
 				CD054CFD20B98DF60083016A /* filled_heart.png in Resources */,
 				CD054CFC20B98DF60083016A /* empty_heart.png in Resources */,
 				CD423ED220B68F4D00682DE6 /* Main.storyboard in Resources */,
+				CD72BB2820BC782F002B4CFE /* theatre.png in Resources */,
+				CD72BB2D20BC789F002B4CFE /* more.png in Resources */,
+				CD72BB2920BC782F002B4CFE /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD423EEE20B68FFF00682DE6 /* ShowDiaryViewController.swift in Sources */,
+				CD72BB2F20BC7E0A002B4CFE /* DiaryTableViewCell.swift in Sources */,
 				CD423EEB20B68FFF00682DE6 /* WriteDiaryViewController.swift in Sources */,
 				CD423ECD20B68F4D00682DE6 /* AppDelegate.swift in Sources */,
 				CD423EF020B6954100682DE6 /* CosmosDistrib.swift in Sources */,

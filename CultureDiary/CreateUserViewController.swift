@@ -27,9 +27,6 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func idCheck(_ sender: UIButton) {
-    }
-    
     func executeRequest (request: URLRequest) -> Void {
         let session = URLSession.shared
         let task = session.dataTask(with: request) { (responseData, response, responseError) in
