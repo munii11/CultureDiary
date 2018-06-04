@@ -31,7 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             labelStatus.text = "비밀번호를 입력하세요";
             return;
         }
-        let urlString: String = "http://localhost:8888/CultureDiary/loginUser.php"
+        let urlString: String = "http://condi.swu.ac.kr/student/T02iphone/loginUser.php"
         guard let requestURL = URL(string: urlString) else {
             return
         }

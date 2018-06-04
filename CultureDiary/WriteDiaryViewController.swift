@@ -25,14 +25,15 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         super.viewDidLoad()
         
         genrePicker.delegate = self
-        //textGerne.inputView = pickerView
         
+        // genrePicker 툴바 생성
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default
         toolBar.isTranslucent = true
         toolBar.sizeToFit()
-        
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(genreDonePressed))
+        // 툴바에 done버튼 생성
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain,
+                                         target: self, action: #selector(genreDonePressed))
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         
@@ -70,7 +71,8 @@ class WriteDiaryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         toolbar.sizeToFit()
         
         //bar button item
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(dateDonePressed))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                         target: nil, action: #selector(dateDonePressed))
         toolbar.setItems([doneButton], animated: false)
         
         textDate.inputAccessoryView = toolbar

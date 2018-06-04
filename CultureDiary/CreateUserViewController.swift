@@ -62,7 +62,7 @@ class CreateUserViewController: UIViewController, UITextFieldDelegate {
             labelStatus.text = "사용자 이름을 입력하세요"
             return
         }
-    let urlString: String = "http://localhost:8888/CultureDiary/insertUser.php"
+    let urlString: String = "http://condi.swu.ac.kr/student/T02iphone/insertUser.php"
     guard let requestURL = URL(string: urlString) else {
         return
     }
